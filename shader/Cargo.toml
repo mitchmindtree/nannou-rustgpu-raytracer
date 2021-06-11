@@ -1,0 +1,12 @@
+[package]
+name = "nannou-raytracer-shader"
+version = "0.1.0"
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+nannou-raytracer-shared = { path = "../shared" }
+spirv-std = { git = "https://github.com/mitchmindtree/rust-gpu", branch = "codegen-crate-name-fix", features = ["glam"] }

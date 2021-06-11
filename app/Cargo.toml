@@ -1,0 +1,11 @@
+[package]
+name = "nannou-raytracer-app"
+version = "0.1.0"
+edition = "2018"
+publish = false
+
+[dependencies]
+fps_ticker = "1"
+nannou = { git = "https://github.com/nannou-org/nannou", rev = "81ce490420f9b72e6fe5094c601c47f062bb0f76" }
+nannou-raytracer-shared = { path = "../shared" }
+spirv-builder = { git = "https://github.com/mitchmindtree/rust-gpu", branch = "codegen-crate-name-fix" }
