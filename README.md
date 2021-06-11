@@ -6,6 +6,14 @@ ray tracing, and what limitations there are around ray tracing in real-time.
 
 ![screenshot](./nannou-ray-tracer-screenshot.png)
 
+## Performance
+
+A small GUI was developed to tweak the most performance intensive parameters to
+better understand what affects performance. E.g. on my XPS 13 with integrated
+GPU the render above was taken with 20 rays per pixel and runs at around 3 FPS,
+however running the same scene with 2 rays per pixel yields ~25 FPS but with a
+much noisier result.
+
 ## Build Requirements
 
 - Use `rustup` to install nightly Rust and include the `rust-dev` and
