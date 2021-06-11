@@ -15,6 +15,27 @@ ray tracing, and what limitations there are around ray tracing in real-time.
   GUI for tweaking performance. Take a look at the platform-specific
   requirements for nannou projects [here](https://guide.nannou.cc/getting_started/platform-specific_setup.html).
 
+## Running
+
+To run the project, use:
+
+```
+cargo run --release -p nannou-raytracer-app
+```
+
+## Code Structure
+
+There are 3 crates in this repo:
+
+- `app` is the main application that provides the GUI, builds the Rust shader
+  via `SpirvBuilder` and sets up the WGPU pipeline.
+- `shader` is the crate containing both the fragment shader and vertex shader
+  entrypoints (`main_fs` and `main_vs`).
+- `shared` contains code shared between both `app` and `shader`. It declares
+  and implements most of the ray-tracing abstractions and logic. By implementing
+  most stuff in a shared crate, I could more easily debug certain functions on
+  the CPU in the `app` if necessary.
+
 ## rust-gpu
 
 `rust-gpu` is still very rough around the edges but is already approaching a
