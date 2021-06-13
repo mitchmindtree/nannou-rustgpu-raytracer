@@ -16,9 +16,9 @@ much noisier result.
 
 ## Build Requirements
 
-- Use `rustup` to install nightly Rust and include the `rust-dev` and
-  `rustc-src` components. These are necessary for the rust-gpu spir-v builder to
-  function.
+- Use `rustup` to install nightly Rust and include the `llvm-tools-preview`,
+  `rustc-dev` and `rust-src` components. These are necessary for the rust-gpu
+  spir-v builder to function.
 - `nannou` is used to provide the event loop, wgpu graphics pipeline and a small
   GUI for tweaking performance. Take a look at the platform-specific
   requirements for nannou projects [here](https://guide.nannou.cc/getting_started/platform-specific_setup.html).

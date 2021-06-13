@@ -1536,6 +1536,7 @@ dependencies = [
 [[package]]
 name = "nannou"
 version = "0.16.0"
+source = "git+https://github.com/nannou-org/nannou?rev=81ce490420f9b72e6fe5094c601c47f062bb0f76#81ce490420f9b72e6fe5094c601c47f062bb0f76"
 dependencies = [
  "cgmath",
  "conrod_core",

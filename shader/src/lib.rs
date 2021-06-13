@@ -6,7 +6,7 @@
 )]
 
 use shared::{color, Camera, Dielectric, Lambertian, MaterialInfo, MaterialKind, Materials, Metal, Rng, ShaderConstants, Sphere};
-use spirv_std::glam::{vec2, vec3, vec4, Vec2, Vec3, Vec4};
+use spirv_std::glam::{vec2, vec3, vec4, Vec2, Vec4};
 
 // Note: This cfg is incorrect on its surface, it really should be "are we compiling with std", but
 // we tie #[no_std] above to the same condition, so it's fine.
