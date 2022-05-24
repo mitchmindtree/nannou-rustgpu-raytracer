@@ -9,4 +9,4 @@ crate-type = ["dylib"]
 
 [dependencies]
 nannou-raytracer-shared = { path = "../shared" }
-spirv-std = { git = "https://github.com/mitchmindtree/rust-gpu", branch = "codegen-crate-name-fix", features = ["glam"] }
+spirv-std = { git = "https://github.com/EmbarkStudios/rust-gpu", features = ["glam"] }
